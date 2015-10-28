@@ -48,7 +48,7 @@ void Bin::insert()
     temp=root;
     while(temp!=NULL)
     {
-        if(num>=temp->info)
+        if(num>temp->info)
         {
             prev=temp;
             temp=temp->right;
@@ -59,7 +59,7 @@ void Bin::insert()
             temp=temp->left;
         }
     }
-    if(num>=prev->info)
+    if(num>prev->info)
     {
         prev->right=p;
     }
@@ -67,6 +67,7 @@ void Bin::insert()
     {
         prev->left=p;
     }
+    //}
 }
 
 void Bin::preorder(tree *temp)
