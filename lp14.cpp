@@ -58,7 +58,6 @@ void Bin::insert()
             prev=temp;
             temp=temp->left;
         }
-    }
     if(num>=prev->info)
     {
         prev->right=p;
@@ -66,6 +65,7 @@ void Bin::insert()
     else
     {
         prev->left=p;
+    }
     }
 }
 
