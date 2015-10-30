@@ -36,11 +36,11 @@ int main()
 			op1=s[top--];
 			res=compute(ch,op1,op2);
 			s[++top]=res;
-			}
 		}
+	}
 		res=s[top--];
 		printf("\nthe result=%f\n",res);
-		}	
+}	
 			
 			
 			
