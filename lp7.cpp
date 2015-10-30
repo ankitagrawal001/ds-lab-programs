@@ -1,5 +1,4 @@
-/**
-Lab Program 7
+/*************************************************************************
 Design, develop, and execute a program in C++ to create a class
 called STACK using an array of integers and to implement the
 following operations by overloading the operators + and - :
@@ -11,7 +10,7 @@ operator pops off the top element.
 Handle the STACK Empty and STACK Full conditions. Also
 display the contents of the stack after each operation, by overloading
 the operator <<.
-*/
+*************************************************************************/
 
 #include <iostream>
 
@@ -94,5 +93,5 @@ ostream& operator <<(ostream &out,stack r)
 }
 
 /**
-author-Aman
+	Author - Aman
 */
