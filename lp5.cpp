@@ -1,6 +1,4 @@
-/**
-Lab Program 5
----------------------------------------------------------------------------
+/***************************************************************************
 Design, develop, and execute a program in C++ based on the
 following requirements:
 An EMPLOYEE class is to contain the following data members and
@@ -12,9 +10,8 @@ Member functions: to read the data of an employee, to calculate
 Net_Salary and to print the values of all the data members.
 (All_Allowances = 123% of Basic; Income Tax (IT) = 30% of the
 gross salary (= basic_Salary _ All_Allowance); Net_Salary =
-Basic_Salary + All_Allowances – IT)
-----------------------------------------------------------------------------
-**/
+Basic_Salary + All_Allowances â€“ IT)
+**************************************************************************/
 
 #include <iostream>
 #include <stdlib.h>
