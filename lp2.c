@@ -75,3 +75,7 @@ int main()
     printf("Postfix expression is %s \n",postfix);
     return 0;
 }
+
+/***
+    Author - Aman
+***/
