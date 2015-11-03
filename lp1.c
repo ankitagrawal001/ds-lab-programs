@@ -1,6 +1,8 @@
-//Lab program 1
+/*
+	Using circular representation for a polynomial design ,develope and execute a program in C to accept two polynomials , add them 
+	and pint the esulting value.
 
-
+*/
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -124,7 +126,9 @@ int main()
 	return;
 	}					
 					
-					
+	/*
+		Author - Melrick
+			*/				
 					
 					
 					
