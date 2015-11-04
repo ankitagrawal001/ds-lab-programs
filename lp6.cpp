@@ -1,3 +1,11 @@
+/*******************************************************************
+Design, develop, and execute a program in C++ to create a class
+called STRING and implement the following operations. Display
+the results after every operation by overloading the operator <<.
+    i. STRING s1 = “VTU”
+    ii. STRING s2 = “BELGAUM”
+    iii. STIRNG s3 = s1 + s2; (Use copy constructor)
+******************************************************************/
 #include<iostream>
 #include<string.h>
 using namespace std;
@@ -48,4 +56,6 @@ int main()
 	cout<<"\nafter string catenation s3="<<s3<<endl;
 	return 0;
 }
-/*  Author-Dhanya*/
+/***
+    Author-Dhanya
+***/
