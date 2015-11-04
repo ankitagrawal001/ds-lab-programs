@@ -59,7 +59,7 @@ void display(int *a,int n)
     if (n==0)
     {
         printf("Heap is Empty!\n");
-        return 0;
+        return;
     }
     printf("The Elements of the max heap are:");
     for(i=0;i<n;i++)
@@ -89,3 +89,8 @@ int main()
     }
     return 0;
 }
+
+/**
+    Author - Aman
+**/
+
