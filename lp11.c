@@ -12,18 +12,18 @@ iv. Display the contents of the list.
 #include<stdio.h>
 #include<stdlib.h>
 #define MALLOC(p,n,type)\
-p=(type*)malloc(n*sizeof(type));\
-if(p==NULL)\
-{\
-printf("insufficient memory");\
-free(p);\
-exit(0);}
+    p=(type*)malloc(n*sizeof(type));\
+    if(p==NULL)\
+    {\
+    printf("insufficient memory");\
+    free(p);\
+    exit(0);}
 
 struct node
 {
-int info;
-struct node *llink;
-struct node *rlink;
+    int info;
+    struct node *llink;
+    struct node *rlink;
 };
 
 typedef struct node *NODE;
@@ -158,4 +158,6 @@ int main()
     }
     return 0;
 }
-/*Author-Dhanya*/
+/***
+    Author-Dhanya
+***/
