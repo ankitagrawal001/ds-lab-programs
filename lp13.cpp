@@ -33,7 +33,7 @@ class octal
     }
     int operator +(int k)
     {
-        return oct+k;
+        return y+k;
     }
     friend ostream& operator <<(ostream &,octal);
 };
