@@ -17,7 +17,7 @@ class date{
 							leapyear=1;
 						cout<<"enter month:";
 						cin>>mm;
-						if(mm>13)
+						if(mm<13)
 							valid=1;
 						cout<<"\n enter day:";
 						cin>>dd;
