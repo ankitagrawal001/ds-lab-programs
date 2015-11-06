@@ -2,7 +2,7 @@
 using namespace std;
 
 int leapm[]={0,31,29,31,30,31,30,31,31,30,31,30,31};
-int nleapm[]={0,31,29,31,30,31,30,31,31,30,31,30,31};
+int nleapm[]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 int leapyear=0;
 class date{
 		public:
