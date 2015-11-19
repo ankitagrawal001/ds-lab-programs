@@ -1,0 +1,112 @@
+#include<iostream>
+using namespace std;
+int m[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
+int isLeap(int y)
+{
+    return (y%100==0)? (y%400==0?1:0) :(y%4==0?1:0);
+}
+class date
+{
+    int dd,mm,yy;
+public:
+    void getdate(int d,int m,int y)
+    {
+        dd =d;
+        mm = m;
+        yy =y;
+    }
+    void printdate()
+    {
+        cout<<dd<<"/"<<mm<<"/"<<yy;
+    }
+    int operator-(date d2);
+    date operator+(int n);
+};
+
+int date::operator-(date d2)
+{
+    int n=0;
+    register int i,j;
+    if(mm==d2.mm && yy == d2.yy)
+    {
+        return dd-d2.dd;
+    }
+    int y =yy-d2.yy;
+    while(y)
+    {
+        n+=365;
+        y--;
+    }
+    if(d2.mm>mm)
+    {
+       for(i = mm ; i!=d2.mm ; i++)
+            n -= m[i];
+    }
+    else
+    {
+        for(i=d2.mm; i != mm ;i++ )
+            n+= m[i];
+    }
+    n+=(dd-d2.dd);
+
+
+
+    while(yy>=d2.yy)
+    {
+        d2.yy==yy ? (n+= d2.mm>2  ? 0:isLeap(d2.yy)) : (n+=isLeap(d2.yy));
+        d2.yy++;
+    }
+    return isLeap(yy)&& dd<29 ?  --n:n;
+
+}
+date date::operator+(int n)
+{
+    while(n>0)
+    {
+        if(mm==2)
+        {
+            if(dd == 28 + isLeap(yy))
+            {
+                mm++;
+                dd =1;
+            }
+            else
+                dd++;
+            n--;
+        }
+        else
+        {
+            if(dd == m[mm])
+            {
+                if(mm==12)
+                {
+                    yy++;
+                    mm=dd =1;
+
+                }
+                else
+                {
+                    mm++;
+                    dd=1;
+                }
+            }
+            else
+                dd++;
+            n--;
+        }
+    }
+
+        return *this;
+
+}
+
+
+
+/* Class and Funtion defination for date Program.
+
+Author : Ankit */
+
+
+
+
+
